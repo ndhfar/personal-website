@@ -16,5 +16,45 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body class="bg-customWhite min-h-screen font-montserrat">
+    <header
+      class="w-screen flex items-center justify-between fixed px-6 py-3 z-50 md:px-10"
+    >
+      <h1
+        class="text-customBlue font-poppins font-extrabold text-2xl md:text-4xl"
+      >
+        NR
+      </h1>
+      <nav
+        class="absolute hidden top-14 right-6 px-6 py-3 rounded-xl border text-customBlack font-medium shadow-custom md:block md:static md:border-none md:shadow-none md:p-0"
+        id="navigation"
+      >
+        <ul
+          class="space-y-3 md:space-y-0 md:flex md:items-center md:gap-5 lg:gap-12"
+        >
+          <li class="hover:text-customBlue transition-all duration-200">
+            <a href="#home">Home</a>
+          </li>
+          <li class="hover:text-customBlue transition-all duration-200">
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li class="hover:text-customBlue transition-all duration-200">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hover:text-customBlue transition-all duration-200">
+            <a href="#motivation">Motivation</a>
+          </li>
+          <li class="hover:text-customBlue transition-all duration-200">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex md:hidden">
+        <i
+          class="bx bx-menu text-customBlack text-2xl cursor-pointer"
+          id="menu-btn"
+        ></i>
+      </div>
+    </header>
+  </body>
 </html>
