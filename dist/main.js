@@ -1,3 +1,15 @@
+// header fixed
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const fixedNav = header.offsetTop;
+
+  if (window.scrollY > fixedNav) {
+    header.classList.add("backdrop-blur-lg", "border-b-[1px]");
+  } else {
+    header.classList.remove("backdrop-blur-lg", "border-b-[1px]");
+  }
+});
+
 // navigation
 const menuBtn = document.getElementById("menu-btn");
 const navigation = document.getElementById("navigation");
