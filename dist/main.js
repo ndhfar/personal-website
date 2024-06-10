@@ -23,3 +23,12 @@ menuBtn.addEventListener("click", () => {
     navigation.classList.add("hidden");
   }
 });
+
+// typed.js
+const Typed = require("typed.js");
+
+const typed = new Typed("#title", {
+  strings: ["Fullstack Engineer"],
+  typeSpeed: 30,
+  loop: true,
+});
